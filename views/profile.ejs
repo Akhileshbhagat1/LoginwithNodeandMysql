@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <style>
+        html{
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="page-hader text-center">
+           <h1>My Profile</h1>
+           <a href="/logout" class="btn btn-danger btn-sm">Logout</a>
+       </div>
+       <div class="row">
+           <div class="col-sm-12">
+               <div class="well">
+                   <h3><span class="fa fa-user"> Welcome <%= user.username %></span></h3>
+                   <p>
+                       <strong>id</strong><%= user.id %><br>
+                       <strong>Username</strong><%= user.username %><br>
+                       
+                   </p>
+               </div>
+           </div>
+       </div>
+    </div>
+    
+</body>
+</html>
